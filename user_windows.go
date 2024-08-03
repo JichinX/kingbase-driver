@@ -1,5 +1,5 @@
 // Package pq is a pure Go Postgres driver for the database/sql package.
-package pq
+package kb
 
 import (
 	"path/filepath"

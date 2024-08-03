@@ -1,4 +1,4 @@
-package pq
+package kb
 
 import (
 	"bufio"
@@ -23,8 +23,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/lib/pq/oid"
-	"github.com/lib/pq/scram"
+	"github.com/jichinx/pg-kb/oid"
+	"github.com/jichinx/pg-kb/scram"
 )
 
 // Common error types
@@ -1425,7 +1425,7 @@ func (st *stmt) Exec(v []driver.Value) (res driver.Result, err error) {
 
 func (st *stmt) exec(v []driver.Value) {
 	if len(v) >= 65536 {
-		errorf("got %d parameters but PostgreSQL only supports 65535 parameters", len(v))
+		errorf("got %d parameters but Kingbase only supports 65535 parameters", len(v))
 	}
 	if len(v) != len(st.paramTyps) {
 		errorf("got %d parameters but the statement requires %d", len(v), len(st.paramTyps))
@@ -1750,7 +1750,7 @@ func (cn *conn) sendBinaryParameters(b *writeBuf, args []driver.Value) {
 
 func (cn *conn) sendBinaryModeQuery(query string, args []driver.Value) {
 	if len(args) >= 65536 {
-		errorf("got %d parameters but PostgreSQL only supports 65535 parameters", len(args))
+		errorf("got %d parameters but Kingbase only supports 65535 parameters", len(args))
 	}
 
 	b := cn.writeBuf('P')

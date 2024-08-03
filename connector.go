@@ -1,4 +1,4 @@
-package pq
+package kb
 
 import (
 	"context"
@@ -62,7 +62,7 @@ func NewConnector(dsn string) (*Connector, error) {
 		o[k] = v
 	}
 
-	if strings.HasPrefix(dsn, "postgres://") || strings.HasPrefix(dsn, "postgresql://") {
+	if strings.HasPrefix(dsn, "kingbase://") {
 		dsn, err = ParseURL(dsn)
 		if err != nil {
 			return nil, err

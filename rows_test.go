@@ -1,11 +1,11 @@
-package pq
+package kb
 
 import (
 	"math"
 	"reflect"
 	"testing"
 
-	"github.com/lib/pq/oid"
+	"github.com/jichinx/pg-kb/oid"
 )
 
 func TestDataTypeName(t *testing.T) {

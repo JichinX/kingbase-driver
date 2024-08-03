@@ -1,4 +1,4 @@
-package pq
+package kb
 
 import (
 	"bytes"
@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/lib/pq/oid"
+	"github.com/jichinx/pg-kb/oid"
 )
 
 var time2400Regex = regexp.MustCompile(`^(24:00(?::00(?:\.0+)?)?)(?:[Z+-].*)?$`)

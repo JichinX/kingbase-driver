@@ -3,7 +3,7 @@
 //go:build aix || darwin || dragonfly || freebsd || (linux && !android) || nacl || netbsd || openbsd || plan9 || solaris || rumprun || illumos
 // +build aix darwin dragonfly freebsd linux,!android nacl netbsd openbsd plan9 solaris rumprun illumos
 
-package pq
+package kb
 
 import (
 	"os"

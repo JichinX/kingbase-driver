@@ -1,3 +1,3 @@
-module github.com/lib/pq
+module github.com/jichinx/pg-kb
 
 go 1.13

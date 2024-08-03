@@ -3,7 +3,7 @@
 //go:build js || android || hurd || zos
 // +build js android hurd zos
 
-package pq
+package kb
 
 func userCurrent() (string, error) {
 	return "", ErrCouldNotDetectUsername

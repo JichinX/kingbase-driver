@@ -1,11 +1,10 @@
-package pq
+package kb
 
 import (
+	"github.com/jichinx/pg-kb/oid"
 	"math"
 	"reflect"
 	"time"
-
-	"github.com/lib/pq/oid"
 )
 
 const headerSize = 4

@@ -1,4 +1,4 @@
-package pq
+package kb
 
 // This file contains SSL tests
 

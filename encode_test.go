@@ -1,4 +1,4 @@
-package pq
+package kb
 
 import (
 	"bytes"
@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lib/pq/oid"
+	"github.com/jichinx/pg-kb/oid"
 )
 
 func TestScanTimestamp(t *testing.T) {

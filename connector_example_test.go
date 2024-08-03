@@ -1,18 +1,18 @@
 //go:build go1.10
 // +build go1.10
 
-package pq_test
+package kb_test
 
 import (
 	"database/sql"
 	"fmt"
 
-	"github.com/lib/pq"
+	"github.com/jichinx/pg-kb"
 )
 
 func ExampleNewConnector() {
 	name := ""
-	connector, err := pq.NewConnector(name)
+	connector, err := kb.NewConnector(name)
 	if err != nil {
 		fmt.Println(err)
 		return

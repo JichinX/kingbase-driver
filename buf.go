@@ -1,10 +1,10 @@
-package pq
+package kb
 
 import (
 	"bytes"
 	"encoding/binary"
 
-	"github.com/lib/pq/oid"
+	"github.com/jichinx/pg-kb/oid"
 )
 
 type readBuf []byte
